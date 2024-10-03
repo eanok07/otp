@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            otp
+        </title>
+    </head>
+    <body>
+        <fieldset>
+            <input type="text" value="" id="ot" name="enter the no">
+            <input type="button" value="submit" onclick="otp()">
+        </fieldset>
+    </body>
+    <script>
+
+function otp(){
+let tp="";
+for(let i=0;i<4;i++){
+    tp+=Math.floor(Math.random()*10)
+}
+console.log(tp)
+return tp
+}
+   </script>
+</html>
